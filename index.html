@@ -32,6 +32,29 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "MPM Store",
+    "url": "https://mpmstore.net",
+    "email": "support@mpmstore.net",
+    "description": "MPM Store is a digital products marketplace offering original downloadable digital resources for creators, students, freelancers, and small businesses.",
+    "contactPoint": [
+      { "@type": "ContactPoint", "contactType": "customer support", "email": "support@mpmstore.net" },
+      { "@type": "ContactPoint", "contactType": "billing support", "email": "billing@mpmstore.net" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "MPM Store",
+    "url": "https://mpmstore.net",
+    "description": "Original downloadable digital products for creators, students, freelancers, and small businesses."
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
     "@type": "Store",
     "name": "MPM Store",
     "url": "https://mpmstore.net",
@@ -57,12 +80,11 @@
 
       <nav aria-label="Primary">
         <ul class="nav-menu" id="nav-menu">
-          <li><a href="index.html" class="is-active">Home</a></li>
+          <li><a href="index.html" class="is-active" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="pricing.html">Products</a></li>
           <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="terms-of-service.html">Terms</a></li>
-          <li><a href="privacy-policy.html">Privacy</a></li>
-          <li><a href="refund-policy.html">Refund</a></li>
+          <li><a href="faq.html">FAQ</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a class="btn btn--primary btn--mobile" href="pricing.html">View Products</a></li>
         </ul>
@@ -183,11 +205,72 @@
             <p>Use the product for personal or business projects according to the product license.</p>
           </div>
         </div>
+        <div class="text-center mt-32">
+          <div class="notice">
+            <span class="notice-tag">Delivery</span>
+            <span>No physical goods are shipped. All products are delivered digitally.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY CHOOSE MPM STORE ============ -->
+    <section class="section" id="why-choose">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Business transparency</span>
+          <h2>Why choose MPM Store</h2>
+          <p>Clear, responsible practices that put customers first.</p>
+        </div>
+        <div class="grid grid--3">
+          <article class="feature-card">
+            <span class="feature-icon grad-1" aria-hidden="true">★</span>
+            <div>
+              <h3>Original digital products</h3>
+              <p>Every item is self-created and owned by MPM Store — never resold or repackaged work.</p>
+            </div>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon grad-2" aria-hidden="true">🔒</span>
+            <div>
+              <h3>Secure checkout</h3>
+              <p>Payments are processed by trusted providers. We never store your full card details.</p>
+            </div>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon grad-3" aria-hidden="true">↺</span>
+            <div>
+              <h3>Clear refund process</h3>
+              <p>A fair, published refund policy with a simple request procedure by email.</p>
+            </div>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon grad-4" aria-hidden="true">✉</span>
+            <div>
+              <h3>Dedicated customer support</h3>
+              <p>Reach our team at support@mpmstore.net. We aim to respond within 24–48 business hours.</p>
+            </div>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon grad-5" aria-hidden="true">⚡</span>
+            <div>
+              <h3>Instant digital delivery</h3>
+              <p>Receive download access or instructions by email shortly after a successful checkout.</p>
+            </div>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon grad-1" aria-hidden="true">✓</span>
+            <div>
+              <h3>Transparent policies</h3>
+              <p>Plain-language Terms, Privacy, and Refund policies published on every page.</p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
     <!-- ============ TRUST / COMPLIANCE ============ -->
-    <section class="section" id="compliance">
+    <section class="section section--alt" id="compliance">
       <div class="container">
         <div class="trust">
           <span class="eyebrow">Compliance &amp; trust</span>
@@ -212,7 +295,7 @@
     </section>
 
     <!-- ============ FEATURED PRODUCTS ============ -->
-    <section class="section section--alt" id="featured">
+    <section class="section" id="featured">
       <div class="container">
         <div class="section-head">
           <span class="eyebrow">Preview</span>
@@ -288,7 +371,7 @@
     </section>
 
     <!-- ============ FAQ ============ -->
-    <section class="section" id="faq">
+    <section class="section section--alt" id="faq">
       <div class="container">
         <div class="section-head">
           <span class="eyebrow">Questions</span>
@@ -348,15 +431,18 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a class="brand" href="index.html"><span class="brand-mark">M</span> MPM Store</a>
-          <p>Original downloadable digital products for creators, students, freelancers, and small businesses. Digital downloads only.</p>
-          <p style="margin-top:12px;">Email: <a href="mailto:support@mpmstore.net">support@mpmstore.net</a></p>
+          <p>Digital Products Marketplace — original downloadable digital products for creators, students, freelancers, and small businesses. Digital downloads only.</p>
+          <p style="margin-top:12px;">Support: <a href="mailto:support@mpmstore.net">support@mpmstore.net</a></p>
+          <p>Billing: <a href="mailto:billing@mpmstore.net">billing@mpmstore.net</a></p>
         </div>
         <div class="footer-col">
-          <h4>Store</h4>
+          <h4>Quick Links</h4>
           <ul>
             <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="pricing.html">Products</a></li>
             <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="faq.html">FAQ</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
@@ -373,7 +459,7 @@
           <ul>
             <li><a href="contact.html">Contact us</a></li>
             <li><a href="mailto:support@mpmstore.net">Email support</a></li>
-            <li><a href="index.html#faq">FAQ</a></li>
+            <li><a href="faq.html">FAQ</a></li>
           </ul>
         </div>
       </div>
